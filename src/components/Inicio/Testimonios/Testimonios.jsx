@@ -7,19 +7,22 @@ const testimonios = [
     nombre: "María Gómez",
     opinion:
       "Excelente calidad y atención. Compré unas zapatillas y llegaron en 48 horas. ¡Súper recomendado!",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    avatar:
+      "https://static.vecteezy.com/system/resources/previews/013/042/571/non_2x/default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.jpg",
   },
   {
     nombre: "Lucas Fernández",
     opinion:
       "Muy buena experiencia, pude cambiar un producto sin problemas. Volvería a comprar.",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar:
+      "https://static.vecteezy.com/system/resources/previews/013/042/571/non_2x/default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.jpg",
   },
   {
     nombre: "Camila Rivas",
     opinion:
       "La ropa es cómoda y se nota que es de buena calidad. Me encantó el diseño también.",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    avatar:
+      "https://static.vecteezy.com/system/resources/previews/013/042/571/non_2x/default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.jpg",
   },
 ];
 
