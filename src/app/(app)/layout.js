@@ -1,5 +1,7 @@
+import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import AlertaConstruccion from "@/components/Alertas/AlertaConstruccion";
 
 export default function RootLayout({ children }) {
   return (
@@ -7,6 +9,8 @@ export default function RootLayout({ children }) {
       <body className="bg-gray-100">
         <Navbar />
         <main className="px-4 md:px-12 py-6">{children}</main>
+        <Footer />
+        <AlertaConstruccion />
       </body>
     </html>
   );

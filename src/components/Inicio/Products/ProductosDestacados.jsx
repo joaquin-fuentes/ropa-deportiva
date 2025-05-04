@@ -1,8 +1,8 @@
 "use client";
 
 import { useProductStore } from "@/store/productStore";
-import ProductCard from "@/components/Products/ProductCard";
-import Filtros from "@/components/Products/Filtros";
+import ProductCard from "@/components/Inicio/Products/ProductCard";
+import Filtros from "@/components/Inicio/Products/Filtros";
 
 export default function ProductosDestacados() {
   const productos = useProductStore((state) => state.productos);
@@ -20,9 +20,11 @@ export default function ProductosDestacados() {
 
   return (
     <section className="my-12">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">
-        Productos Destacados
-      </h2>
+      <div className="text-center">
+        <h2 className="text-2xl md:text-4xl font-bold inline-block relative after:content-[''] after:block after:w-32 after:h-1 after:bg-green-400 after:mt-2 after:ml-0">
+          Productos Destacados
+        </h2>
+      </div>
       <Filtros />
       <div className="grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
         {productosFiltrados.length > 0 ? (

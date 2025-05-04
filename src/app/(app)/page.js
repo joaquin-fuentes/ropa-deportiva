@@ -1,4 +1,8 @@
-import ProductosDestacados from "@/components/Products/ProductosDestacados";
+import Beneficios from "@/components/Inicio/Beneficios/Beneficios";
+import CategoriasDestacadas from "@/components/Inicio/Categorias/CategoriasDestacadas";
+import Newsletter from "@/components/Inicio/NewsLetter/NewsLetter";
+import ProductosDestacados from "@/components/Inicio/Products/ProductosDestacados";
+import Testimonios from "@/components/Inicio/Testimonios/Testimonios";
 
 export const metadata = {
   title: "Inicio | SportZone",
@@ -19,14 +23,16 @@ export default function Home() {
           <p className="text-lg md:text-xl mb-6">
             Equipate con la mejor ropa deportiva del mercado
           </p>
-          <button className="bg-green-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-300 transition">
+          <button className="bg-green-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-300 transition cursor-pointer">
             Ver productos
           </button>
         </div>
       </section>
-
-      {/* Cliente */}
+      <CategoriasDestacadas />
+      <Beneficios />
       <ProductosDestacados />
+      <Testimonios />
+      <Newsletter />
     </>
   );
 }

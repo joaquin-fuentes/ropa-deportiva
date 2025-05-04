@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
         <p className="text-sm text-gray-600">{product.description}</p>
         <div className="flex justify-between items-center mt-2">
           <span className="text-green-600 font-bold">${product.price}</span>
-          <button className="bg-black text-white px-4 py-2 text-sm rounded-lg hover:bg-green-500 hover:text-black transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-400">
+          <button className="cursor-pointer bg-black text-white px-4 py-2 text-sm rounded-lg hover:bg-green-500 hover:text-black transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-400">
             Añadir
           </button>
         </div>
