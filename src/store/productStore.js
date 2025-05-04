@@ -1,6 +1,5 @@
 import { create } from "zustand";
 
-// Array de productos harcodeado
 const productosMock = [
   {
     name: "Camiseta DryFit",
@@ -74,10 +73,24 @@ const productosMock = [
   },
 ];
 
-export const useProductStore = create((set) => ({
+export const useProductStore = create((set, get) => ({
   productos: productosMock,
+  filtroNombre: "",
+  precioMin: 0,
+  precioMax: 10000,
 
-  getProductos: () => productosMock,
+  setFiltroNombre: (nombre) => set({ filtroNombre: nombre }),
+  setPrecioMin: (min) => set({ precioMin: min }),
+  setPrecioMax: (max) => set({ precioMax: max }),
 
-  setProductos: (nuevos) => set({ productos: nuevos }),
+  getProductosFiltrados: () => {
+    const { productos, filtroNombre, precioMin, precioMax } = get();
+    return productos.filter((prod) => {
+      const matchNombre = prod.name
+        .toLowerCase()
+        .includes(filtroNombre.toLowerCase());
+      const matchPrecio = prod.price >= precioMin && prod.price <= precioMax;
+      return matchNombre && matchPrecio;
+    });
+  },
 }));
