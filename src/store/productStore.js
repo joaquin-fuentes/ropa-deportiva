@@ -17,7 +17,7 @@ const productosMock = [
     category: "hombres",
     destacado: true,
     image:
-      "https://i.pinimg.com/736x/99/f4/40/99f440867d8914943fdfb94bb0c29212.jpg",
+      "https://img.kwcdn.com/product/fancy/a477f596-66e0-4366-a21b-23c16d3985ce.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
   },
   {
     name: "Zapatillas Runner",
@@ -53,7 +53,7 @@ const productosMock = [
     category: "hombres",
     destacado: true,
     image:
-      "https://i.pinimg.com/736x/dc/f6/05/dcf605f499851a830a5322cc68cf0ef4.jpg",
+      "https://acdn-us.mitiendanube.com/stores/306/659/products/wp_-267-df870554289263c54516980831391603-1024-1024.jpg",
   },
   {
     name: "Sudadera con Capucha",

@@ -26,17 +26,17 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Navegación</h4>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <Link href="#" className="hover:text-green-400 transition">
+              <Link href="/" className="hover:text-green-400 transition">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-green-400 transition">
+              <Link href="/productos" className="hover:text-green-400 transition">
                 Productos
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-green-400 transition">
+              <Link href="/contacto" className="hover:text-green-400 transition">
                 Contacto
               </Link>
             </li>
@@ -48,7 +48,7 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Contacto</h4>
           <ul className="text-gray-400 space-y-2">
             <li>Email: contacto@sportzone.com</li>
-            <li>Tel: +54 381 123 4567</li>
+            <li>Tel: +54 381 609 7754</li>
             <li>Horario: Lunes a Viernes, 9 a 18 h</li>
           </ul>
         </div>
