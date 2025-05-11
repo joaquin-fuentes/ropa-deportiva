@@ -3,6 +3,7 @@ import CategoriasDestacadas from "@/components/Inicio/Categorias/CategoriasDesta
 import Newsletter from "@/components/Inicio/NewsLetter/NewsLetter";
 import ProductosDestacados from "@/components/Inicio/Products/ProductosDestacados";
 import Testimonios from "@/components/Inicio/Testimonios/Testimonios";
+import Link from "next/link";
 
 export const metadata = {
   title: "Inicio | SportZone",
@@ -23,9 +24,12 @@ export default function Home() {
           <p className="text-lg md:text-xl mb-6">
             Equipate con la mejor ropa deportiva del mercado
           </p>
-          <button className="bg-green-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-300 transition cursor-pointer">
+          <Link
+            href={"/productos"}
+            className="bg-green-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-300 transition cursor-pointer"
+          >
             Ver productos
-          </button>
+          </Link>
         </div>
       </section>
       <CategoriasDestacadas />

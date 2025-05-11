@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
@@ -25,19 +26,19 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Navegación</h4>
           <ul className="space-y-2 text-gray-400">
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <Link href="#" className="hover:text-green-400 transition">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <Link href="#" className="hover:text-green-400 transition">
                 Productos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <Link href="#" className="hover:text-green-400 transition">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -56,18 +57,18 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Seguinos</h4>
           <div className="flex gap-4 text-lg">
-            <a href="#" className="hover:text-green-400 transition">
+            <Link href="#" className="hover:text-green-400 transition">
               <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-green-400 transition">
+            </Link>
+            <Link href="#" className="hover:text-green-400 transition">
               <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-green-400 transition">
+            </Link>
+            <Link href="#" className="hover:text-green-400 transition">
               <FaTwitter />
-            </a>
-            <a href="#" className="hover:text-green-400 transition">
+            </Link>
+            <Link href="#" className="hover:text-green-400 transition">
               <FaWhatsapp />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
